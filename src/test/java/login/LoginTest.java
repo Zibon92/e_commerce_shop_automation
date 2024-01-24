@@ -9,8 +9,8 @@ public class LoginTest extends FileHelper {
 
     public void getSuccessfulLogin(){
         LoginPage loginPage = homePage.clickFormAuthentication();
-//        loginPage.setUserName("tomsmith");
-//        loginPage.setPassword("SuperSecretPassword!");
+        loginPage.setUserName("tomsmith");
+        loginPage.setPassword("SuperSecretPassword!");
         SecureAreaPage secureAreaPage = loginPage.clickLoginButton();
         secureAreaPage.getAlertText();
     }
